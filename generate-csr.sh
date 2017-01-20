@@ -1,7 +1,6 @@
 #!/bin/bash
 # 
-# Generate CSR for Apache modSSL
-# works also for Pound
+# Generate CSR 
 #
 # Repo:
 # https://github.com/eidenschink/generate-csr.git
@@ -19,7 +18,7 @@ exit 6
 fi
 
 # defaults
-DES="-des3"
+DES="-aes128"
 BITS="2048"
 
 while test $# -gt 0; do
